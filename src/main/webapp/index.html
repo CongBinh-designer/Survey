@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murach's Java Sevlets and JSP</title>
+    <link rel="icon" href="images/murach.webp">
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body>
+<img src="images/murach.webp" alt="Logo" width="200">
+<h1>Survey</h1>
+<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+
+<form action="survey" method="post">
+    <section class="form">
+    <h1>Your information:</h1>
+    <input type="hidden" name="action" value="add">
+
+    <label>First Name:</label>
+    <input type="text" name="firstName" required><br>
+
+    <label>Last Name:</label>
+    <input type="text" name="lastName" required><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="date" required><br>
+    </section>
+
+<section class="radio">
+<h1>How did you hear about us?</h1>
+<input type="radio" name="radioChoice" value="Search Engine">Search Engine
+<input type="radio" name="radioChoice" value="Word of mouth">Word of mouth
+<input type="radio" name="radioChoice" value="Social Media">Social Media
+<input type="radio" name="radioChoice" value="Other">Other
+</section>
+
+<section class="checkbox">
+<h1>Would you like to receive announcements about new CDs and special offers?</h1>
+    <p><input type="checkbox" name="checkBox" value="yes1">YES, I'd like that.<br></p>
+    <p><input type="checkbox" name="checkBox" value="yes2">YES, please send me email announcements.<br></p>
+</section>
+
+<section class="contact">
+<p>Please contact me by:
+<select name="contact">
+    <option value="Email or Postal mail" selected>Email or postal mail</option>
+    <option value="Email">Email only</option>
+    <option value="Postal mail only">Postal mail only</option>
+</select>
+</p><br>
+</section>
+
+<input type="submit" value="Submit" id="submit">
+</form>
+
+</body>
+</html>
